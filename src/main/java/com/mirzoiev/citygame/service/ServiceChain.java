@@ -21,10 +21,10 @@ public class ServiceChain {
     }
 
     private TreeSet<String> recursion(String firstWord, List<String> cityList,
-                                             TreeSet<String> treeSet)
+                                      TreeSet<String> treeSet)
             throws IOException {
         for (String city : cityList) {
-            if (!firstWord.isEmpty() && !isCharEqual(firstWord, city)){
+            if (!firstWord.isEmpty() && !isCharEqual(firstWord, city)) {
                 continue;
             }
 

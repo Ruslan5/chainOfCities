@@ -1,6 +1,7 @@
 version: "3.3"
 
 services:
-  web:
+  app:
     build: .
-    container_name: mirzoiev-city
+    container_name: mirzoiev-city2
+

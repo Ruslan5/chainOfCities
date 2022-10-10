@@ -21,11 +21,13 @@ import java.util.regex.Pattern;
  */
 public class CityRead {
     private static final int LIMIT_OF_CITIES = 10;
+
     public List<String> getCities(String fileName) throws IOException {
+
         List<String> lines = Files.readAllLines(Paths.get(fileName),
                 StandardCharsets.UTF_8);
 
-        for (String s: lines) {
+        for (String s : lines) {
             Pattern pattern = Pattern.compile("\\s\\S");
             Matcher matcher = pattern.matcher(s);
             boolean found = matcher.find();
@@ -34,13 +36,13 @@ public class CityRead {
             }
         }
 
-        Set<String> citySet=new LinkedHashSet<>(lines);
+        Set<String> citySet = new LinkedHashSet<>(lines);
         if (citySet.size() > LIMIT_OF_CITIES) {
             throw new IOException("limit is exceeded. maximum" + LIMIT_OF_CITIES);
         }
-        if (citySet.isEmpty()){
+        if (citySet.isEmpty()) {
             throw new IOException("list is empty");
         }
-            return new ArrayList<>(citySet);
+        return new ArrayList<>(citySet);
     }
 }

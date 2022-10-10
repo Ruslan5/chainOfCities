@@ -10,6 +10,7 @@ import static junit.framework.TestCase.assertEquals;
 
 
 public class CityReadTest {
+//    String FILE_NAME = "testCity.txt";
     String FILE_NAME = "src/test/resources/testCity.txt";
     CityRead cityRead = new CityRead();
 

@@ -9,7 +9,9 @@ import java.util.List;
 import static junit.framework.TestCase.assertEquals;
 
 public class ServiceChainTest {
+//    String FILE_NAME = "testCity.txt";
     String FILE_NAME = "src/test/resources/testCity.txt";
+
     CityRead cityRead = new CityRead();
     ServiceChain chain2 = new ServiceChain();
 
