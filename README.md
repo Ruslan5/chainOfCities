@@ -29,4 +29,5 @@ You can run the application in the Main class
 after specifying the relative path to the text file with data
 
 Or in Docker using the command
+
     docker-compose up --build
